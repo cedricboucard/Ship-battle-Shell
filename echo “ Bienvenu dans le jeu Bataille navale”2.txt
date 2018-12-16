@@ -1,0 +1,326 @@
+﻿#Le Jeu a été réaliser par BOUCARD CEDRIC ET DAVID PORRAS en BTS SN1
+echo “ Bienvenu dans le jeu Bataille navale”
+echo “ J1 ?” 
+#Demande du nom du joueur 1
+read J1
+echo “$J1 tu sera le joueur 1”
+echo “J2?” 
+#Demande du nom du joueur 2
+read J2 
+#Lecture du nom du joueur 2
+echo “$J2 tu sera le joueur 2”
+
+####Choix des bateaux du Joueur 1, il pourra placer quatre bateau chaque bateau(= une case) 
+echo “ $J1 Choisis ses bateaux”
+
+###le placement des bateaux pour le joueur 1 commence par : "J1" suivie du numero de la case exemple pour A3
+## on fera J1A3
+echo “$J1 veuillez placer votre premier bateau : ”
+read bat1
+        case $bat1 in 
+                        J1A1) A1=$bat1 break ;;
+J1A2) A2=$bat1 break ;;
+J1A3) A3=$bat1 break ;;
+J1A4) A4=$bat1 break ;;
+J1B1) B1=$bat1 break ;;
+J1B2) B2=$bat1 break ;;
+J1B3) B3=$bat1 break ;;
+J1B4) B4=$bat1 break ;;
+J1C1) C1=$bat1 break ;;
+J1C2) C2=$bat1 break ;;
+J1C3) C3=$bat1 break ;;
+J1C4) C4=$bat1 break ;;
+J1D1) D1=$bat1 break ;;
+J1D2) D2=$bat1 break ;;
+J1D3) A3=$bat1 break ;;
+J1D4) D4=$bat1 break ;;
+*) echo “Ce n’est pas un bateau”
+                ;;
+esac
+echo `clear`
+echo “$J1 Veuillez placer votre 2ème bateau : “                        
+read bat2
+        case $bat2 in 
+J1A1) A1=$bat2 break ;;
+J1A2) A2=$bat2 break ;;
+J1A3) A3=$bat2 break ;;
+J1A4) A4=$bat2 break ;;
+J1B1) B1=$bat2 break ;;
+J1B2) B2=$bat2 break ;;
+J1B3) B3=$bat2 break ;;
+J1B4) B4=$bat2 break ;;
+J1C1) C1=$bat2 break ;;
+J1C2) C2=$bat2 break ;;
+J1C3) C3=$bat2 break ;;
+J1C4) C4=$bat2 break ;;
+J1D1) D1=$bat2 break ;;
+J1D2) D2=$bat2 break ;;
+J1D3) A3=$bat2 break ;;
+J1D4) D4=$bat2 break ;;
+*) echo “Ce n’est pas un bateau”
+                ;;
+esac
+
+
+echo `clear`
+
+
+echo “$J1 Veuillez placer votre 3ème bateau : ” 
+read $bat3
+        case $bat3 in 
+J1A1) A1=$bat3 break ;;
+J1A2) A2=$bat3 break ;;
+J1A3) A3=$bat3 break ;;
+J1A4) A4=$bat3 break ;;
+J1B1) B1=$bat3 break ;;
+J1B2) B2=$bat3 break ;;
+J1B3) B3=$bat3 break ;;
+J1B4) B4=$bat3 break ;;
+J1C1) C1=$bat3 break ;;
+J1C2) C2=$bat3 break ;;
+J1C3) C3=$bat3 break ;;
+J1C4) C4=$bat3 break ;;
+J1D1) D1=$bat3 break ;;
+J1D2) D2=$bat3 break ;;
+J1D3) A3=$bat3 break ;;
+J1D4) D4=$bat3 break ;;
+*) echo “Ce n’est pas un bateau”
+                ;;
+esac
+
+
+echo `clear`
+
+
+echo “$J1 Veuillez placer votre dernier bateau : ”
+read bat4
+        case $bat4 in 
+J1A1) A1=$bat4 break ;;
+J1A2) A2=$bat4 break ;;
+J1A3) A3=$bat4 break ;;
+J1A4) A4=$bat4 break ;;
+J1B1) B1=$bat4 break ;;
+J1B2) B2=$bat4 break ;;
+J1B3) B3=$bat4 break ;;
+J1B4) B4=$bat4 break ;;
+J1C1) C1=$bat4 break ;;
+J1C2) C2=$bat4 break ;;
+J1C3) C3=$bat4 break ;;
+J1C4) C4=$bat4 break ;;
+J1D1) D1=$bat4 break ;;
+J1D2) D2=$bat4 break ;;
+J1D3) A3=$bat4 break ;;
+J1D4) D4=$bat4 break ;;
+*) echo “Ce n’est pas un bateau”
+                ;;
+esac
+echo `clear`
+echo “$J2 Choisis ces bateaux”
+
+
+
+
+echo “$J2 veuillez placer votre premier bateau : “
+read dat1
+
+
+case $dat1 in 
+J2A1) A1=$dat1 break ;;
+J2A2) A2=$dat1 break ;;
+J2A3) A3=$dat1 break ;;
+J2A4) A4=$dat1 break ;;
+J2B1) B1=$dat1 break ;;
+J2B2) B2=$dat1 break ;;
+J2B3) B3=$dat1 break ;;
+J2B4) B4=$dat1 break ;;
+J2C1) C1=$dat1 break ;;
+J2C2) C2=$dat1 break ;;
+J2C3) C3=$dat1 break ;;
+J2C4) C4=$dat1 break ;;
+J2D1) D1=$dat1 break ;;
+J2D2) D2=$dat1 break ;;
+J2D3) D3=$dat1 break ;;
+J2D4) D4=$dat1 break ;;
+*) echo “ Ce n’est pas un bateau valide” break ;; 
+
+
+esac
+echo `clear`
+
+echo “$J2 veuillez placer votre 2ème bateau : “
+read dat2
+
+
+case $dat2 in 
+J2A1) A1=$dat2 break ;;
+J2A2) A2=$dat2 break ;;
+J2A3) A3=$dat2 break ;;
+J2A4) A4=$dat2 break ;;
+J2B1) B1=$dat2 break ;;
+J2B2) B2=$dat2 break ;;
+J2B3) B3=$dat2 break ;;
+J2B4) B4=$dat2 break ;;
+J2C1) C1=$dat2 break ;;
+J2C2) C2=$dat2 break ;;
+J2C3) C3=$dat2 break ;;
+J2C4) C4=$dat2 break ;;
+J2D1) D1=$dat2 break ;;
+J2D2) D2=$dat2 break ;;
+J2D3) D3=$dat2 break ;;
+J2D4) D4=$dat2 break ;;
+*) echo “ Ce n’est pas une bateau valide” break ;; 
+
+
+esac
+echo “$J2 veuillez placer votre 3ème bateau : “
+read dat3
+
+
+case $dat3 in 
+J2A1) A1=$dat3 break ;;
+J2A2) A2=$dat3 break ;;
+J2A3) A3=$dat3 break ;;
+J2A4) A4=$dat3 break ;;
+J2B1) B1=$dat3 break ;;
+J2B2) B2=$dat3 break ;;
+J2B3) B3=$dat3 break ;;
+J2B4) B4=$dat3 break ;;
+J2C1) C1=$dat3 break ;;
+J2C2) C2=$dat3 break ;;
+J2C3) C3=$dat3 break ;;
+J2C4) C4=$dat3 break ;;
+J2D1) D1=$dat3 break ;;
+J2D2) D2=$dat3 break ;;
+J2D3) D3=$dat3 break ;;
+J2D4) D4=$dat3 break ;;
+*) echo “ Ce n’est pas une bateau  valide” break ;; 
+esac
+echo “$J2 veuillez placer votre dernier bateau : “
+read dat4
+
+
+case $dat4 in 
+J2A1) A1=$dat4 break ;;
+J2A2) A2=$dat4 break ;;
+J2A3) A3=$dat4 break ;;
+J2A4) A4=$dat4 break ;;
+J2B1) B1=$dat4 break ;;
+J2B2) B2=$dat4 break ;;
+J2B3) B3=$dat4 break ;;
+J2B4) B4=$dat4 break ;;
+J2C1) C1=$dat4 break ;;
+J2C2) C2=$dat4 break ;;
+J2C3) C3=$dat4 break ;;
+J2C4) C4=$dat4 break ;;
+J2D1) D1=$dat4 break ;;
+J2D2) D2=$dat4 break ;;
+J2D3) D3=$dat4 break ;;
+J2D4) D4=$dat4 break ;;
+*) echo “ Ce n’est pas un bateau valide” break ;; 
+esac
+
+
+echo “La partie commence” 
+J1p=4
+J2p=4
+while (( $J1p > 0 || $J2p > 0 ))
+do
+echo “$J1 attaque” 
+read RJ1
+
+
+if [ "$RJ1" = "$dat1" ]
+then
+$J2p=$(( $J2p-1 ))
+echo "touché"
+else
+echo "--"
+fi
+
+
+if [ "$RJ1" = "$dat2" ]
+then
+$J2p=$(( $J2p-1 ))
+echo "touché"
+else
+echo "--"
+fi
+
+
+
+
+if [ "$RJ1" = "$dat3" ]
+then
+$J2p=$(( $J2p-1 ))
+echo "touché"
+else
+echo "--"
+fi
+
+
+
+
+if [ "$RJ1" = "$dat4" ]
+then
+$J2p=$(( $J2p-1 ))
+echo "touché"
+else
+echo "--"
+fi
+
+
+
+
+echo “$J2 attaque”
+read RJ2
+
+
+if [ "$RJ2" = "$bat1" ]
+then
+$J1p=$(( $J1p-1 ))
+echo "touché"
+else
+echo "--"
+fi
+
+
+if [ "$RJ2" = "$bat2" ]
+then
+$J2p=$(( $J2p-1 ))
+echo "touché"
+else
+echo "--"
+fi
+
+
+
+
+if [ "$RJ2" = "$bat3" ]
+then
+$J1p=$(( $J1p-1 ))
+echo "touché"
+else
+echo "--"
+fi
+
+
+
+
+if [ "$RJ2" = "$bat4" ]
+then
+$J1p=$(( $J1p-1 ))
+echo "touché"
+else
+echo "--"
+fi
+done
+
+
+if [J1p=0] 
+then 
+echo “ Bravo $J2 tu as gagné !” 
+fi
+if [J2p=0] 
+then
+echo “Bravo $J1 tu as gagné !”
+fi

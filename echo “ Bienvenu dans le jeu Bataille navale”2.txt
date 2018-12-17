@@ -1,5 +1,5 @@
 ﻿#!/bin/sh
- #Le Jeu a été réaliser par BOUCARD CEDRIC ET DAVID PORRAS Nicolas.W,Maxime T en BTS SN1
+ #Le Jeu a été réaliser par BOUCARD CEDRIC ET DAVID PORRAS en BTS SN1
 echo “ Bienvenu dans le jeu Bataille navale”
 echo “ J1 ?” 
 #Demande du nom du joueur 1
